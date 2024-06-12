@@ -116,7 +116,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
               width: maxWidth,
               child: ClipRect(
                 clipper: NavCustomClipper(
-                  deviceHeight: MediaQuery.sizeOf(context).height,
+                  deviceHeight: MediaQuery.of(context).size.height,
                 ),
                 child: Stack(
                   clipBehavior: Clip.none,
